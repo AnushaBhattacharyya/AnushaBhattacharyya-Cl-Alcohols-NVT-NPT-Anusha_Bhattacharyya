@@ -1,0 +1,437 @@
+Info: GOMC Version 2.70
+Info: Start Time: Sun Aug  8 05:49:19 2021
+Info: Host Name: anushabhattacharyya-VirtualBox
+CPU information:
+Info: Total number of CPUs: 1
+Info: Total number of CPUs available: 1
+Info: Model name: AMD Ryzen 7 5800X 8-Core Processor
+Info: System name: Linux
+Info: Release: 5.11.0-25-generic
+Info: Version: #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 23627.8MB
+Info: Used Ram: 9906.3MB
+Info: Working in the current directory: /home/anushabhattacharyya/Cl Alcohols-NPT/10-CCl2HCH2CH2OH
+Info: GOMC COMPILED TO RUN ISOBARIC-ISOTHERMAL ENSEMBLE.
+Info: Number of threads                  1 
+Info: Compiled with OpenMP Version       4.5
+
+Reading Input File:                      in_NPT.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     CHARMM format! 
+Info: Input Temperature                  248.0000 K
+Info: Input Pressure                     410.0000 bar
+Info: Volume change using constant ratio.
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Ewald Summation                    Active 
+Info: Cache Ewald Fourier                Inactive 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Pressure calculation frequency     1000 
+Info: Total number of steps              10000 
+Info: Number of equilibration steps      1000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.1500 
+Info: Rotation move frequency            0.1500 
+Info: Intra-Swap move frequency          0.2900 
+Warning: Unknown input SwapFreq!
+Info: Regrowth move frequency            0.3000 
+Info: Crank-Shaft move frequency         0.1000 
+Info: Volume move frequency              0.0100 
+Info: Multi-Particle move frequency      0.0000 
+Info: IntraMEMC-1 move frequency         0.0000 
+Warning: Unknown input MEMC-1Freq!
+Info: IntraMEMC-2 move frequency         0.0000 
+Warning: Unknown input MEMC-2Freq!
+Info: IntraMEMC-3 move frequency         0.0000 
+Warning: Unknown input MEMC-3Freq!
+Info: CBMC First atom trials             12   
+Info: CBMC Secondary atom trials         10   
+Info: CBMC Angle trials                  50   
+Info: CBMC Dihedral trials               50   
+Info: Output name                        Output_data 
+Info: Restart frequency                  1000 
+Info: Checkpoint frequency               1000 
+Info: Coordinate frequency               1000 
+Info: Console output frequency           1000 
+Info: Average output frequency           1000 
+Warning: Unknown input HistogramFreq!
+Warning: Unknown input DistName!
+Warning: Unknown input HistName!
+Warning: Unknown input RunNumber!
+Warning: Unknown input RunLetter!
+Warning: Unknown input SampleFreq!
+Warning: Unknown input OutMolNumber!
+Default: Box  0  CutoffCoulomb           10.0000 A
+Finished Reading Input File:             in_NPT.conf
+
+Reading from CHARMM-Style parameter file:  	NPT_CCl2HCH2CH2OH_file.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED parameters.
+Reading from system PDB coordinate file:  	NPT_CCl2HCH2CH2OH.pdb
+Finished reading:                       	NPT_CCl2HCH2CH2OH.pdb
+Random number seed: 2503307810
+Warning: Dihedral is missing for CClH !
+Warning: Dihedral is missing for COH !
+
+Molecules in PSF:
+Molecule Kind: CClH
+Idx	name	type	charge	mass
+0	C1	A	-0.2400	12.0108
+1	H1	B	0.0600	1.0079
+2	H2	B	0.0600	1.0079
+3	H3	B	0.0600	1.0079
+4	H4	B	0.0600	1.0079
+
+Bonds:
+[0 1] [2 0] [3 0] [4 0] 
+
+Angles:
+[1 0 2] [1 0 3] [1 0 4] [2 0 3] [2 0 4] [3 0 4] 
+
+Dihedrals:
+
+Molecule Kind: CH3
+Idx	name	type	charge	mass
+0	C1	I	0.1450	12.0108
+1	O1	F	-0.6830	15.9994
+2	H1	H	0.0400	1.0079
+3	H2	H	0.0400	1.0079
+4	H3	H	0.0400	1.0079
+5	H4	G	0.4180	1.0079
+
+Bonds:
+[0 1] [2 0] [3 0] [4 0] [5 1] 
+
+Angles:
+[0 1 5] [1 0 2] [1 0 3] [1 0 4] [2 0 3] [2 0 4] [3 0 4] 
+
+Dihedrals:
+[2 0 1 5] [3 0 1 5] [4 0 1 5] 
+
+Molecule Kind: COH
+Idx	name	type	charge	mass
+0	C1	D	-0.0060	12.0108
+1	Cl1	C	-0.2000	35.4532
+2	Cl2	C	-0.2000	35.4532
+3	H1	E	0.1030	1.0079
+4	H2	E	0.1030	1.0079
+
+Bonds:
+[0 1] [2 0] [3 0] [4 0] 
+
+Angles:
+[1 0 2] [1 0 3] [1 0 4] [2 0 3] [2 0 4] [3 0 4] 
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+A	B	                 171094.6637           1.0900 
+B	A	                 171094.6637           1.0900 
+
+I	F	                 161030.2717           1.4100 
+H	I	                 171094.6637           1.0900 
+G	F	                 278280.4382           0.9450 
+
+D	C	                 123288.8018           1.7810 
+C	D	                 123288.8018           1.7810 
+E	D	                 171094.6637           1.0900 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+B	A	B	          16606.2468         107.8000 
+
+I	F	G	          27677.0779         108.5000 
+F	I	H	          17612.6860         109.5000 
+H	I	H	          16606.2468         107.8000 
+
+C	D	C	          39251.1287         111.7000 
+C	D	E	          25664.1995         107.6000 
+E	D	E	          16606.2468         107.8000 
+
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+H	I	F	G	    226.4488    0     90.0000 
+H	I	F	G	      0.0000    1    180.0000 
+H	I	F	G	      0.0000    2      0.0000 
+H	I	F	G	   -113.2244    3    180.0000 
+H	I	F	G	      0.0000    4      0.0000 
+H	I	F	G	      0.0000    5    180.0000 
+
+================================================
+
+Warning: Sum of the charge in the system is: -100.0000
+
+================================================
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+A      A                    16.6062      3.5000   12.00 
+A      B                    11.1959      3.0000   12.00 
+A      D                    16.6062      3.5000   12.00 
+A      C                    35.4046      3.4500   12.00 
+A      E                    11.1959      3.0000   12.00 
+A      I                    16.6062      3.5000   12.00 
+A      F                    26.6516      3.3100   12.00 
+A      H                    11.1959      3.0000   12.00 
+A      G                     0.0000      6.7500   12.00 
+B      B                     7.5483      2.5000   12.00 
+B      D                    11.1959      3.0000   12.00 
+B      C                    23.8698      2.9500   12.00 
+B      E                     7.5483      2.5000   12.00 
+B      I                    11.1959      3.0000   12.00 
+B      F                    17.9685      2.8100   12.00 
+B      H                     7.5483      2.5000   12.00 
+B      G                     0.0000      6.2500   12.00 
+D      D                    16.6062      3.5000   12.00 
+D      C                    35.4046      3.4500   12.00 
+D      E                    11.1959      3.0000   12.00 
+D      I                    16.6062      3.5000   12.00 
+D      F                    26.6516      3.3100   12.00 
+D      H                    11.1959      3.0000   12.00 
+D      G                     0.0000      6.7500   12.00 
+C      C                    75.4829      3.4000   12.00 
+C      E                    23.8698      2.9500   12.00 
+C      I                    35.4046      3.4500   12.00 
+C      F                    56.8215      3.2600   12.00 
+C      H                    23.8698      2.9500   12.00 
+C      G                     0.0000      6.7000   12.00 
+E      E                     7.5483      2.5000   12.00 
+E      I                    11.1959      3.0000   12.00 
+E      F                    17.9685      2.8100   12.00 
+E      H                     7.5483      2.5000   12.00 
+E      G                     0.0000      6.2500   12.00 
+I      I                    16.6062      3.5000   12.00 
+I      F                    26.6516      3.3100   12.00 
+I      H                    11.1959      3.0000   12.00 
+I      G                     0.0000      6.7500   12.00 
+F      F                    42.7737      3.1200   12.00 
+F      H                    17.9685      2.8100   12.00 
+F      G                     0.0000      6.5600   12.00 
+H      H                     7.5483      2.5000   12.00 
+H      G                     0.0000      6.2500   12.00 
+G      G                     0.0000     10.0000   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+A      A                    33.2125      3.5000   12.00 
+A      B                    22.3919      3.0000   12.00 
+A      D                    33.2125      3.5000   12.00 
+A      C                    70.8093      3.4500   12.00 
+A      E                    22.3919      3.0000   12.00 
+A      I                    33.2125      3.5000   12.00 
+A      F                    53.3033      3.3100   12.00 
+A      H                    22.3919      3.0000   12.00 
+A      G                     0.0000      6.7500   12.00 
+B      B                    15.0966      2.5000   12.00 
+B      D                    22.3919      3.0000   12.00 
+B      C                    47.7396      2.9500   12.00 
+B      E                    15.0966      2.5000   12.00 
+B      I                    22.3919      3.0000   12.00 
+B      F                    35.9371      2.8100   12.00 
+B      H                    15.0966      2.5000   12.00 
+B      G                     0.0000      6.2500   12.00 
+D      D                    33.2125      3.5000   12.00 
+D      C                    70.8093      3.4500   12.00 
+D      E                    22.3919      3.0000   12.00 
+D      I                    33.2125      3.5000   12.00 
+D      F                    53.3033      3.3100   12.00 
+D      H                    22.3919      3.0000   12.00 
+D      G                     0.0000      6.7500   12.00 
+C      C                   150.9659      3.4000   12.00 
+C      E                    47.7396      2.9500   12.00 
+C      I                    70.8093      3.4500   12.00 
+C      F                   113.6430      3.2600   12.00 
+C      H                    47.7396      2.9500   12.00 
+C      G                     0.0000      6.7000   12.00 
+E      E                    15.0966      2.5000   12.00 
+E      I                    22.3919      3.0000   12.00 
+E      F                    35.9371      2.8100   12.00 
+E      H                    15.0966      2.5000   12.00 
+E      G                     0.0000      6.2500   12.00 
+I      I                    33.2125      3.5000   12.00 
+I      F                    53.3033      3.3100   12.00 
+I      H                    22.3919      3.0000   12.00 
+I      G                     0.0000      6.7500   12.00 
+F      F                    85.5473      3.1200   12.00 
+F      H                    35.9371      2.8100   12.00 
+F      G                     0.0000      6.5600   12.00 
+H      H                    15.0966      2.5000   12.00 
+H      G                     0.0000      6.2500   12.00 
+G      G                     0.0000     10.0000   12.00 
+
+Info: Box  0:  Periodic Cell Basis 1     45.000   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  45.000   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  45.000 
+
+Minimum coordinates in box 0: x =    1.941, y =    1.968, z =    1.927
+Maximum coordinates in box 0: x =   43.092, y =   43.029, z =   43.007
+Wrapping molecules inside the simulation box 0:
+Box: 0, RecipVectors:   9402, kmax: 17
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0      6.0770e+07      8.0818e+05      0.0000e+00      5.9387e+07     -1.5144e+05      7.2630e+05      1.0830e+05      1.7108e+06     -1.3432e+07      1.2339e+07
+
+STITLE:     STEP          VOLUME        PRESSURE     TOT_DENSITY
+
+STAT_0:        0      9.1125e+04      5.4676e+05      1.2120e+03
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        REGROWTH    REGROWACCEPT   REGROWACCEPT%      CRANKSHAFT  CRKSHAFTACCEPT CRKSHAFTACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP          VOLUME        PRESSURE     TOT_DENSITY
+
+Printed combined psf to file Output_data_merged.psf
+MOVE_0:     1000             155               7      4.5161e+00      2.8191e+00             150              37      2.4667e+01      3.8506e-01             300             166      5.5333e+01             288              83      2.8819e+01              97              33      3.4021e+01              10               5      5.0000e+01      5.0000e+02
+
+ENER_0:     1000      4.2891e+07      9.4694e+05      0.0000e+00      4.2251e+07     -1.5003e+05     -1.5662e+05     -6.3898e+04      9.9304e+05     -1.3432e+07      1.2346e+07
+
+STAT_0:     1000      9.1981e+04      3.9467e+05      1.2007e+03
+
+PRES_0:     1000      3.8320e+05      3.8457e+05      4.1592e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  12.441, Simulation ends in:   0 d:   0 h:  13 m 
+
+MOVE_0:     2000             311              17      5.4662e+00      1.1035e+00             294              95      3.2313e+01      3.1301e-01             578             232      4.0138e+01             595             189      3.1765e+01             199              76      3.8191e+01              23              12      5.2174e+01      5.3846e+02
+
+ENER_0:     2000      3.2947e+07      1.0428e+06      0.0000e+00      3.2401e+07     -1.4745e+05     -3.4882e+05     -1.2832e+05      8.6015e+05     -1.3432e+07      1.2351e+07
+
+STAT_0:     2000      9.3591e+04      3.0346e+05      1.1800e+03
+
+PRES_0:     2000      2.9786e+05      2.9367e+05      3.1849e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  10.162, Simulation ends in:   0 d:   0 h:  12 m 
+
+MOVE_0:     3000             445              44      9.8876e+00      5.8301e-01             428             165      3.8551e+01      3.0788e-01             877             274      3.1243e+01             909             274      3.0143e+01             304             113      3.7171e+01              37              21      5.6757e+01      6.9231e+02
+
+ENER_0:     3000      2.3573e+07      1.1439e+06      0.0000e+00      2.3075e+07     -1.4317e+05     -5.0286e+05     -1.6967e+05      7.4469e+05     -1.3432e+07      1.2354e+07
+
+STAT_0:     3000      9.6388e+04      2.1540e+05      1.1458e+03
+
+PRES_0:     3000      2.1466e+05      1.9989e+05      2.3129e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:   9.978, Simulation ends in:   0 d:   0 h:  11 m 
+
+MOVE_0:     4000             591             103      1.7428e+01      2.2366e-01             568             232      4.0845e+01      2.8280e-01            1174             316      2.6917e+01            1225             358      2.9224e+01             397             142      3.5768e+01              45              26      5.7778e+01      8.6538e+02
+
+ENER_0:     4000      1.8483e+07      1.2106e+06      0.0000e+00      1.8005e+07     -1.4078e+05     -5.9185e+05     -1.9606e+05      6.7934e+05     -1.3432e+07      1.2357e+07
+
+STAT_0:     4000      9.8023e+04      1.7192e+05      1.1267e+03
+
+PRES_0:     4000      1.7244e+05      1.6233e+05      1.8059e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  19.233, Simulation ends in:   0 d:   0 h:   9 m 
+
+MOVE_0:     5000             758             172      2.2691e+01      1.8755e-01             709             300      4.2313e+01      2.7427e-01            1444             338      2.3407e+01            1547             438      2.8313e+01             491             167      3.4012e+01              51              28      5.4902e+01      5.7692e+02
+
+ENER_0:     5000      1.5122e+07      1.2516e+06      0.0000e+00      1.4702e+07     -1.3920e+05     -6.9295e+05     -2.4126e+05      6.2130e+05     -1.3432e+07      1.2359e+07
+
+STAT_0:     5000      9.9137e+04      1.4310e+05      1.1140e+03
+
+PRES_0:     5000      1.4242e+05      1.3747e+05      1.4903e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  18.176, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:     6000             883             224      2.5368e+01      1.3276e-01             859             372      4.3306e+01      2.7064e-01            1733             354      2.0427e+01            1878             523      2.7849e+01             582             199      3.4192e+01              65              36      5.5385e+01      6.5934e+02
+
+ENER_0:     6000      1.1763e+07      1.2786e+06      0.0000e+00      1.1367e+07     -1.3628e+05     -7.4723e+05     -2.7596e+05      6.0033e+05     -1.3432e+07      1.2360e+07
+
+STAT_0:     6000      1.0126e+05      1.1390e+05      1.0907e+03
+
+PRES_0:     6000      1.1311e+05      1.1140e+05      1.1678e+05
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:   9.098, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:     7000            1051             307      2.9210e+01      1.3027e-01            1010             449      4.4455e+01      2.7579e-01            2015             372      1.8462e+01            2184             607      2.7793e+01             668             232      3.4731e+01              72              40      5.5556e+01      7.5353e+02
+
+ENER_0:     7000      9.3620e+06      1.3157e+06      0.0000e+00      8.9912e+06     -1.3389e+05     -8.1104e+05     -3.0364e+05      5.6244e+05     -1.3432e+07      1.2362e+07
+
+STAT_0:     7000      1.0307e+05      9.3978e+04      1.0715e+03
+
+PRES_0:     7000      9.2895e+04      9.3628e+04      9.4992e+04
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  14.646, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:     8000            1185             369      3.1139e+01      1.1966e-01            1151             522      4.5352e+01      2.8517e-01            2302             381      1.6551e+01            2520             698      2.7698e+01             758             273      3.6016e+01              84              46      5.4762e+01      7.5353e+02
+
+ENER_0:     8000      6.9592e+06      1.3519e+06      0.0000e+00      6.5780e+06     -1.3081e+05     -8.3998e+05     -3.0898e+05      5.3706e+05     -1.3432e+07      1.2364e+07
+
+STAT_0:     8000      1.0549e+05      7.2454e+04      1.0469e+03
+
+PRES_0:     8000      6.9881e+04      7.1156e+04      7.5891e+04
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:   9.955, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:     9000            1353             463      3.4220e+01      1.3118e-01            1298             600      4.6225e+01      2.9652e-01            2606             393      1.5081e+01            2806             772      2.7512e+01             844             308      3.6493e+01              93              47      5.0538e+01      1.6745e+02
+
+ENER_0:     9000      6.0081e+06      1.3817e+06      0.0000e+00      5.6110e+06     -1.3006e+05     -8.5458e+05     -3.1824e+05      5.3068e+05     -1.3432e+07      1.2365e+07
+
+STAT_0:     9000      1.0610e+05      6.4914e+04      1.0409e+03
+
+PRES_0:     9000      6.2503e+04      6.4307e+04      6.7494e+04
+
+Checkpoint saved to checkpoint.dat
+Steps/sec:  12.196, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:    10000            1501             536      3.5710e+01      1.2627e-01            1445             681      4.7128e+01      3.3510e-01            2897             405      1.3980e+01            3120             848      2.7179e+01             939             340      3.6209e+01              98              50      5.1020e+01      2.0094e+02
+
+ENER_0:    10000      5.1392e+06      1.3701e+06      0.0000e+00      4.7667e+06     -1.2984e+05     -8.6778e+05     -3.3004e+05      5.2861e+05     -1.3432e+07      1.2365e+07
+
+STAT_0:    10000      1.0628e+05      5.8796e+04      1.0391e+03
+
+PRES_0:    10000      5.6667e+04      5.8409e+04      6.0874e+04
+
+Checkpoint saved to checkpoint.dat
+Simulation Time (total): 8.0347e+02 sec.
+
+Move Type                Mol. Kind      BOX_0      
+% Accepted Displacement        CClH    40.23904 
+% Accepted Displacement        COH     27.25410 
+% Accepted Displacement        CH3     39.33464 
+% Accepted Rotation            CClH    49.49084 
+% Accepted Rotation            COH     43.88186 
+% Accepted Rotation            CH3     47.91667 
+% Accepted Volume-Transfer             51.02041 
+% Accepted Intra-Swap          CClH    13.97849 
+% Accepted Intra-Swap          COH     12.14953 
+% Accepted Intra-Swap          CH3     15.73705 
+% Accepted Regrowth            CClH    22.65625 
+% Accepted Regrowth            COH     19.75541 
+% Accepted Regrowth            CH3     39.30300 
+% Accepted Crank-Shaft         CClH    26.05863 
+% Accepted Crank-Shaft         COH     20.97264 
+% Accepted Crank-Shaft         CH3     63.03630 
+
+Displacement:                           10.9756    sec.
+Rotation:                               12.0827    sec.
+MultiParticle:                           0.0000    sec.
+Intra-Swap:                             71.5789    sec.
+Regrowth:                               63.0508    sec.
+Intra-MEMC:                              0.0000    sec.
+Crank-Shaft:                            18.1164    sec.
+Vol-Transfer:                          571.9058    sec.
+
+Info: GOMC Version 2.70
+Info: Completed at: Sun Aug  8 06:03:06 2021
+Info: On hostname: anushabhattacharyya-VirtualBox

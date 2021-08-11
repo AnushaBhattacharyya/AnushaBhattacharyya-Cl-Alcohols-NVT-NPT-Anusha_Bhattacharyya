@@ -1,0 +1,18 @@
+Info: GOMC Version 2.70
+Info: Start Time: Sun Aug  8 12:26:00 2021
+Info: Host Name: anushabhattacharyya-VirtualBox
+CPU information:
+Info: Total number of CPUs: 1
+Info: Total number of CPUs available: 1
+Info: Model name: AMD Ryzen 7 5800X 8-Core Processor
+Info: System name: Linux
+Info: Release: 5.11.0-25-generic
+Info: Version: #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 23627.8MB
+Info: Used Ram: 10660.9MB
+Info: Working in the current directory: /home/anushabhattacharyya/Cl Alcohols-NPT/30-CCl2HCCl2CH2CH2CH2OH
+Info: GOMC COMPILED TO RUN ISOBARIC-ISOTHERMAL ENSEMBLE.
+Info: Number of threads                  1 
+Info: Compiled with OpenMP Version       4.5
+Error: Cannot open/find in_NPT.conf in the directory provided!
